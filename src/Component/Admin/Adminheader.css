@@ -1,0 +1,27 @@
+.mainContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+}
+
+.leftSide{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.leftSide button{
+    height: 20px
+}
+
+.rightSide{
+    display: flex;
+    width: 80%;
+}
+
+
+.NewBtn{
+    display: flex;
+    align-items: center;
+}
