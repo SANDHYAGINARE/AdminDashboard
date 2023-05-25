@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   background-color: rgb(245, 245, 245);
 }
@@ -21,6 +26,8 @@
   flex-basis: 16.66667%;
   background-color: white;
   border-radius: 5px;
+  padding: 10px;
+
 }
 
 .graphContainer {
@@ -41,17 +48,25 @@
   background-color: white;
 }
 .card-1 {
-  width: 32%;
+  width: 30%;
   padding: 20px;
 }
 .card-2 {
-  width: 32%;
+  width: 30%;
+  padding: 20px;
+
 }
 .card-3 {
-  width: 32%;
+  width: 30%;
+  padding: 20px;
+  background: white;
+
 }
 .card-4 {
-  width: 32%;
+  padding: 20px;
+  background: white;
+
+  width: 30%;
 }
 
 .card-Head {
@@ -80,4 +95,65 @@
 
 .rightEsc{
     margin-right: auto;
+}
+
+.cardPair-1{
+  display: flex;
+  position: relative;
+}
+.cardPair-1 div{
+  width: 50%;
+}
+
+.cardPair-2 div{
+  width: 50%;
+}
+
+.cp2{
+  position: absolute;
+    right: 0;
+  
+}
+
+.cardPair-2{
+  display: flex;
+  position: relative;
+}
+
+.cp4{
+  position: absolute;
+    right: 0;
+    width: 50%;
+}
+.message{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.To-do{
+  fill: green;
+}
+.noToDo{
+  width: 40px;
+  height: 40px;
+}
+
+.Todo-container{
+  color: gray; 
+}
+
+.approval span{
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap:10px;
+}
+.spam span{
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap:10px;
 }

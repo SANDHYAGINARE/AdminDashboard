@@ -4,10 +4,10 @@ import { CgProductHunt } from "react-icons/cg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlineRight } from "react-icons/ai";
 import { FiSmile } from "react-icons/fi";
-import { ImNeutral } from "react-icons/tb";
 import { CgSmileSad } from "react-icons/cg";
 import { AiFillPlusCircle } from "react-icons/ai";
- import {RiCalendarTodoFill} from "react-icons/ri"
+import { RiCalendarTodoFill } from "react-icons/ri";
+import { RiAwardFill, RiSpam2Line } from "react-icons/ri";
 
 function AdminBody() {
   return (
@@ -72,10 +72,9 @@ function AdminBody() {
               <h4>3</h4>
             </div>
           </div>
-
-          <div className="card-2">
-            <div>
-              <div>
+          <div className="card-2 ">
+            <div className="card-Head">
+              <div className="headLeft">
                 <h4>Customer satisfaction</h4>
                 <p>Across helpdesk this month</p>
               </div>
@@ -83,37 +82,57 @@ function AdminBody() {
                 <h4 className="viewD">View Details</h4>
               </div>
             </div>
-            <div>
-              <h3>Response recieved</h3>
-              <h3>0</h3>
+            <div className="cardPair-1">
+              <div className="cp1">
+                <h4>Response recieved</h4>
+                <h4>0</h4>
+              </div>
+              <div className="cp2">
+                <h4>Positive</h4>
+                <h4>
+                  0% <FiSmile />
+                </h4>
+              </div>
             </div>
-            <div>
-              <h3>Positive</h3>
-              <h3>
-                0% <FiSmile />
-              </h3>
-            </div>
-            <div>
-              <h3>Neutral</h3>
-              0%
-              <FiSmile />
-            </div>
-            <div>
-              <h3>Negative</h3>
-              0%
-              <CgSmileSad />
+            <div className="cardPair-2">
+              <div className="cp3">
+                <h4>Neutral</h4>
+                0%
+                <FiSmile />
+              </div>
+              <div className="cp4">
+                <h4>Negative</h4>
+                0%
+                <CgSmileSad />
+              </div>
             </div>
           </div>
-          <div className="card-3">dwsds</div>
-          <div className="card-4">
-            <h3>To-do</h3>
-            <div>
-              <AiFillPlusCircle />
-              <input type="text" placeholder="Add a to-do" />
-              <div>
-                <RiCalendarTodoFill />
-                <h4>You have no tasks to do!</h4>
-              </div>
+        </div>
+        <div className="card-3">
+          <h4>Forums</h4>
+          <p>Across helpdesk</p>
+          <div className="approval">
+            <span>
+              <RiAwardFill /> <h4>Waiting for approval</h4>
+            </span>
+            <p>0</p>
+          </div>
+          <div className="spam">
+            <span>
+              <RiSpam2Line /> <h4>Spam</h4>
+            </span>
+            <p>0</p>
+          </div>
+        </div>
+
+        <div className="card-4">
+          <h3>To-do</h3>
+          <div className="Todo-container">
+            <AiFillPlusCircle className="To-do" />
+            <input type="text" placeholder="Add a to-do" />
+            <div className="message">
+              <RiCalendarTodoFill className="noToDo" />
+              <h4>You have no tasks to do!</h4>
             </div>
           </div>
         </div>
